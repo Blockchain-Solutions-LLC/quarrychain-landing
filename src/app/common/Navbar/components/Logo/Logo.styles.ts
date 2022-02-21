@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const LogoContainer = styled.div`
   height: 46px;
@@ -15,4 +16,8 @@ export const LogoImage = styled.img`
 export const TextLogoImage = styled.img`
   height: 24px;
   margin-left: 13px;
+
+  ${media.between("medium", "large")`
+    height: 18px;
+  `};
 `;

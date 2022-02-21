@@ -1,1 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
+
+@font-face {
+  font-family: "DIN";
+  src: url("https://drive.google.com/file/d/1aVJxEG6WQlEEuxFHdN4V7Xbwd1F2U-oZ/view?usp=sharing")
+      format("woff2"),
+    url("https://drive.google.com/file/d/17qXtrTRlP7wIl5mz9FSJTxqmOrb05Fb_/view?usp=sharing")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DIN Bold";
+  src: url("din_bold-webfont.woff2") format("woff2"),
+    url("din_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "DIN Dark";
+  src: url("din_black-webfont.woff2") format("woff2"),
+    url("din_black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DIN Medium";
+  src: url("din_medium-webfont.woff2") format("woff2"),
+    url("din_medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */

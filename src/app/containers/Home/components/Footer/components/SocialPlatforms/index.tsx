@@ -12,8 +12,8 @@ export function SocialPlatforms() {
     <Container>
       <StyledTitle>Quarrychain Social Platform</StyledTitle>
       <SocialMediaIcons>
-        {socialMediaIconNames.map((icon) => (
-          <SingleIcon>
+        {socialMediaIconNames.map((icon, index) => (
+          <SingleIcon key={index}>
             <Icon name={icon} />
           </SingleIcon>
         ))}

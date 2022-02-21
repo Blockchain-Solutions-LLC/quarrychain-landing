@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Icon } from "../../../../../../../../common/Icon";
 
 export const Container = styled.div`
@@ -20,6 +21,10 @@ export const Container = styled.div`
     opacity: 0.7;
     transition: all 0.3s ease-in-out;
   }
+
+  ${media.lessThan("large")`
+    display: none;
+  `}
 `;
 
 export const StyledIcon = styled(Icon)`

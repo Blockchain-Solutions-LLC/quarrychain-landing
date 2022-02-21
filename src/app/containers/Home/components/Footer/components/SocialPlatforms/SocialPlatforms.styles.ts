@@ -1,8 +1,13 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan("medium")`
+    width: 100%;
+  `}
 `;
 
 export const SocialMediaIcons = styled.div`
@@ -10,6 +15,16 @@ export const SocialMediaIcons = styled.div`
   grid-template-columns: repeat(4, 55px);
   column-gap: 40px;
   row-gap: 40px;
+
+  ${media.between("medium", "large")`
+    column-gap: 12px;
+    row-gap: 12px;
+  `};
+
+  ${media.lessThan("medium")`
+    column-gap: 20px;
+    row-gap: 20px;
+  `}
 `;
 
 export const SingleIcon = styled.div`
@@ -58,4 +73,12 @@ export const SingleIcon = styled.div`
       transition: all 0.3s ease-in-out;
     }
   }
+
+  ${media.between("medium", "large")`
+   height: 40px;
+   width: 40px;
+   svg {
+     font-size: 18px;
+   }
+  `};
 `;

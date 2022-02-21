@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Paragraph } from "../../../../../../../../common/Typography/Paragraph";
 import { Title } from "../../../../../../../../common/Typography/Title";
 import { handleSliderContentColor } from "../../utils";
@@ -12,12 +13,24 @@ export const Container = styled.div<{ step: number }>`
   border-radius: 12px;
   padding: 50px 48px;
   transition: all 0.3s ease-in-out;
+
+  ${media.lessThan("large")`
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 40px;
+  `}
 `;
 
 export const TitleAndDescriptionContainer = styled.div`
   width: 80%;
   display: flex;
   flex-direction: column;
+  ${media.lessThan("large")`
+    width: 100%;
+    align-items: center;
+  `}
 `;
 
 export const StyledTitle = styled(Title)`
@@ -43,6 +56,10 @@ export const Description = styled(Paragraph)`
 
 export const HexagonImageContainer = styled.div`
   height: 100%;
+
+  ${media.lessThan("large")`
+      display: none;
+  `}
 `;
 
 export const HexagonImage = styled.img`
