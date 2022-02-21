@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Span } from "../../../../common/Typography/Span";
 import { Title } from "../../../../common/Typography/Title";
 
@@ -13,12 +14,28 @@ export const Container = styled.footer`
       colors: { secondary },
     },
   }) => secondary[200]};
+
+  ${media.lessThan("large")`
+    height: auto;
+    padding: 20px 0px;
+  `}
 `;
 
 export const Content = styled.div`
   width: 70%;
   display: flex;
   justify-content: space-between;
+
+  ${media.between("medium", "large")`
+    width: 80%;
+  `};
+
+  ${media.lessThan("medium")`
+    width: 75%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  `}
 `;
 
 export const StyledTitle = styled(Title)`
@@ -30,6 +47,11 @@ export const StyledTitle = styled(Title)`
       colors: { secondary },
     },
   }) => secondary[50]};
+
+  ${media.between("medium", "large")`
+    font-size: 20px;
+    line-height: 20px;
+  `};
 `;
 
 export const TextContainer = styled.div`
@@ -54,7 +76,10 @@ export const StyledSpan = styled(Span)<{ darker?: boolean }>`
     darker &&
     `
     color: ${neutral[200]};
-  
-  
   `}
+
+  ${media.between("medium", "large")`
+    font-size: 15px;
+    line-height: 15px;
+  `};
 `;

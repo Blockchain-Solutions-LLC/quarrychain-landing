@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const Container = styled.div`
   width: 15%;
@@ -6,6 +7,14 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  ${media.between("medium", "large")`
+    width: 50%;
+  `}
+
+  ${media.lessThan("medium")`
+    width: 65%;
+  `}
 `;
 
 export const StepCircle = styled.div<{ isCurrent?: boolean }>`

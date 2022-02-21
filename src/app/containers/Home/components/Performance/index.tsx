@@ -36,8 +36,8 @@ export function Performance() {
         <CardsContainer>
           {[currentPriceData, transactionVolumeData, transactionCountData].map(
             (data, index) => (
-              <SingleCardContainer>
-                <PerformanceCard data={data} key={index++} />
+              <SingleCardContainer key={index++}>
+                <PerformanceCard data={data} />
               </SingleCardContainer>
             )
           )}

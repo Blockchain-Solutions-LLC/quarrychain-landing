@@ -2,7 +2,6 @@ import { assetPaths } from "../../../../../../../common/constants";
 import { AppTheme } from "../../../../../../../global/theme";
 
 export function handleSliderContentColor(step: number): string {
-  console.log({ step });
   if (step === 1 || step === 4) return AppTheme.colors.regular[0];
   if (step === 2 || step === 5) return AppTheme.colors.regular[100];
   return AppTheme.colors.regular[200];

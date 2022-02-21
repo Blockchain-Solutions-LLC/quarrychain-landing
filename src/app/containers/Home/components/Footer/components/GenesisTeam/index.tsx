@@ -8,9 +8,6 @@ export function GenesisTeam() {
       <TextContainer>
         <StyledSpan>Alec Arrambide - CEO/ Founder</StyledSpan>
       </TextContainer>
-      <TextContainer>
-        <StyledSpan>Riley Gillespie - CMO</StyledSpan>
-      </TextContainer>
     </Container>
   );
 }

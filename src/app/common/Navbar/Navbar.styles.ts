@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const NavbarContainer = styled.div`
   height: 100%;
@@ -21,4 +22,8 @@ export const NavbarContainer = styled.div`
         colors: { primary },
       },
     }) => primary[100]};
+
+  ${media.lessThan("medium")`
+    position: static;
+  `}
 `;

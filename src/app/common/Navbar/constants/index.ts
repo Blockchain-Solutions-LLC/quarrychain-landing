@@ -81,10 +81,6 @@ export const navbarItems: NavbarItem[] = [
         name: "Alec Arrambide - CEO/ Founder",
         url: "/",
       },
-      {
-        name: "Riley Gillespie - CMO",
-        url: "/",
-      },
     ],
   },
 ];

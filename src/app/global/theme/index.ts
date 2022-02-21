@@ -32,7 +32,7 @@ const colors = {
 };
 
 const fonts = {
-  standard: "'Roboto', sans-serif",
+  standard: "'DIN', sans-serif",
 };
 
 export const AppTheme = {

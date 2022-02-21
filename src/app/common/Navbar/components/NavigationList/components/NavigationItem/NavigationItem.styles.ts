@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Span } from "../../../../../Typography/Span";
 
 export const NavigationItemContainer = styled.div`
@@ -23,6 +24,12 @@ export const NavigationItemContainer = styled.div`
     }) => neutral[50]};
     transition: all 0.3s ease-in-out;
   }
+
+  ${media.between("medium", "large")`
+    min-width: 0;
+    padding: initial;
+    margin-right: 10px;
+  `};
 `;
 
 export const InvisibleDiv = styled.div<{ height?: number }>`
@@ -47,4 +54,9 @@ export const StyledSpan = styled(Span)`
   user-select: none;
   font-size: 18px;
   line-height: 18px;
+
+  ${media.between("medium", "large")`
+    font-size: 14px;
+    line-height: 14px;
+  `};
 `;

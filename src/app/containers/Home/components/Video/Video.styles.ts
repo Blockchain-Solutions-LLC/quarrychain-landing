@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { assetPaths } from "../../../../common/constants";
 
 export const Container = styled.section`
@@ -9,4 +10,8 @@ export const Container = styled.section`
   justify-content: center;
   background-position: top;
   background-repeat: no-repeat;
+
+  ${media.lessThan("large")`
+   display: none;
+  `}
 `;

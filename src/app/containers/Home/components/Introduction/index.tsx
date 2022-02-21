@@ -5,11 +5,13 @@ import {
   Container,
   Content,
   ImageContainer,
+  ImageContainerMobile,
   PolygonsImage,
   SloganContainer,
   StyledButton,
   StyledSpan,
   TitleAndButtonsContainer,
+  StyledTitle,
 } from "./Introduction.styles";
 
 export function Introduction() {
@@ -17,12 +19,17 @@ export function Introduction() {
     <Container>
       <Content>
         <TitleAndButtonsContainer>
-          <Title>Quarrychain the future of decentralized exchanges.</Title>
+          <StyledTitle>
+            Quarrychain the future of decentralized exchanges.
+          </StyledTitle>
           <SloganContainer>
             <StyledSpan>
               the most rewarding decentralized platform in the universe.
             </StyledSpan>
           </SloganContainer>
+          <ImageContainerMobile>
+            <PolygonsImage src={assetPaths.POLYGONS} />
+          </ImageContainerMobile>
           <ButtonsContainer>
             <StyledButton withMarginRight>Launch App</StyledButton>
             <StyledButton variant="secondary">Learn More</StyledButton>

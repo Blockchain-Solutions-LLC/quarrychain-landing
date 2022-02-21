@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Span } from "../../../../../../common/Typography/Span";
 
 export const Container = styled.div`
@@ -22,15 +23,18 @@ export const TitleAndValueContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan("medium")`
+    margin-bottom: 5px;
+  `}
 `;
 
 export const TextContainer = styled.div<{ isTitle?: boolean }>`
   ${({ isTitle }) =>
     isTitle &&
     `
-margin-bottom: 10px;
-
-`}
+      margin-bottom: 10px;
+    `}
 `;
 
 export const StyledSpan = styled(Span)<{ isTitle?: boolean }>`
@@ -51,6 +55,14 @@ ${({
   isTitle &&
   `
   color: ${neutral[150]};
+`};
+
+${media.lessThan("large")`
+  font-size: 16px;
+`}
+
+${media.lessThan("medium")`
+  font-size: 20px;
 `}
 
 `;

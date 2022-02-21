@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Title } from "../../../../common/Typography/Title";
 
 export const Container = styled.section`
@@ -11,6 +12,11 @@ export const Container = styled.section`
       colors: { neutral },
     },
   }) => neutral[50]};
+
+  ${media.lessThan("large")`
+    height: auto;
+    padding: 30px 0px;
+  `}
 `;
 
 export const Content = styled.div`
@@ -24,6 +30,20 @@ export const Content = styled.div`
 
 export const StyledTitle = styled(Title)`
   margin-bottom: 80px;
+
+  ${media.lessThan("large")`
+    text-align: center;
+  `}
+
+  ${media.between("medium", "large")`
+    font-size: 40px;
+    margin-bottom: 20px;
+  `};
+
+  ${media.lessThan("medium")`
+    font-size: 30px;
+    margin-bottom: 20px;
+  `}
 `;
 
 export const Cards = styled.div`
@@ -31,4 +51,12 @@ export const Cards = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  ${media.between("medium", "large")`
+    align-items: start;
+  `};
+
+  ${media.lessThan("medium")`
+    flex-direction: column;
+  `}
 `;
