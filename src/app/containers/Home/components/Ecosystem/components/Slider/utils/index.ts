@@ -50,7 +50,7 @@ export function handleSliderContentImage(step: number): string {
     case 3:
       return assetPaths.QUARRY_COIN;
     case 4:
-      return assetPaths.TUFF_TOKEN;
+      return assetPaths.TUFF_TOKEN_HEXAGON;
     case 5:
       return assetPaths.MOAI_TOKEN;
     default:

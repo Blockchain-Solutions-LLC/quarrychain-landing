@@ -54,8 +54,17 @@ export const StyledTitle = styled(Title)`
   `};
 `;
 
-export const TextContainer = styled.div`
+export const TextContainer = styled.div<{ withHover?: boolean }>`
   margin-bottom: 8px;
+  ${({ withHover }) =>
+    withHover &&
+    `
+    cursor: pointer;
+    user-select: none;
+    :hover {
+      opacity: 0.7;
+    }
+  `}
 `;
 
 export const StyledSpan = styled(Span)<{ darker?: boolean }>`
