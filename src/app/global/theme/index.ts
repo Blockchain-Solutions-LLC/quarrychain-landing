@@ -23,7 +23,6 @@ const colors = {
   tertiary: {
     "0": "#EF476F",
   },
-
   regular: {
     "0": "rgba(238, 29, 35, 0.5)",
     "100": "rgba(0, 165, 79, 0.5)",
