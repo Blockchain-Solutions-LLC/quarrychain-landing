@@ -1,11 +1,13 @@
 export type MenuProps = {
-  items: MenuItem[];
+  items: MenuItemType[];
   show?: boolean;
   setMenuHeight?: (height?: number) => void;
+  showSubMenu?: boolean;
+  handleMenuItemClick?: (menuItem: MenuItemType) => void;
 };
 
-export type MenuItem = {
+export type MenuItemType = {
   name: string;
   url?: string;
-  extraMenuItems?: MenuItem[];
+  subMenuItems?: MenuItemType[];
 };

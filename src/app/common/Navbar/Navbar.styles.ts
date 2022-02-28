@@ -25,5 +25,6 @@ export const NavbarContainer = styled.div`
 
   ${media.lessThan("medium")`
     position: static;
+    padding: 15px;
   `}
 `;

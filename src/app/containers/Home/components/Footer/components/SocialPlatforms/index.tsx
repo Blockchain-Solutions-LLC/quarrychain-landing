@@ -1,22 +1,19 @@
-import { Icon } from "../../../../../../common/Icon";
-import { socialMediaIconNames } from "../../constants";
 import { StyledTitle } from "../../Footer.styles";
-import {
-  Container,
-  SocialMediaIcons,
-  SingleIcon,
-} from "./SocialPlatforms.styles";
+import { Container, SocialMediaIcons } from "./SocialPlatforms.styles";
+import { SocialPlatformProps } from "./types";
+import { socialPlatformItemsToShow } from "./utils";
 
-export function SocialPlatforms() {
+export function SocialPlatforms({
+  numberOfItems,
+  noTitle,
+  invertColors,
+  smallSize,
+}: SocialPlatformProps) {
   return (
     <Container>
-      <StyledTitle>Quarrychain Social Platform</StyledTitle>
-      <SocialMediaIcons>
-        {socialMediaIconNames.map((icon, index) => (
-          <SingleIcon key={index}>
-            <Icon name={icon} />
-          </SingleIcon>
-        ))}
+      {!noTitle && <StyledTitle>Quarrychain Social Platform</StyledTitle>}
+      <SocialMediaIcons smallSize={smallSize}>
+        {socialPlatformItemsToShow(numberOfItems, invertColors, smallSize)}
       </SocialMediaIcons>
     </Container>
   );
