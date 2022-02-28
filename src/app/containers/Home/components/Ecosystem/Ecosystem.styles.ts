@@ -44,6 +44,5 @@ export const StyledTitle = styled(Title)`
   ${media.lessThan("medium")`
     font-size: 30px;
     line-height: 30px;
-
   `}
 `;

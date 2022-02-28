@@ -1,10 +1,13 @@
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
-import { BsTwitter, BsYoutube, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { BsTwitter, BsYoutube, BsInstagram } from "react-icons/bs";
+import { GiHamburgerMenu } from "react-icons/gi";
 import {
   FaDiscord,
   FaRedditAlien,
   FaTelegramPlane,
   FaLinkedinIn,
+  FaChevronDown,
+  FaChevronUp,
 } from "react-icons/fa";
 import { IconProps } from "./types";
 
@@ -16,6 +19,15 @@ export function Icon({ className, name }: IconProps) {
 
       case "arrowRight":
         return <MdArrowForwardIos className={className} />;
+
+      case "arrowUp":
+        return <FaChevronUp className={className} />;
+
+      case "arrowDown":
+        return <FaChevronDown className={className} />;
+
+      case "hamburger":
+        return <GiHamburgerMenu className={className} />;
 
       case "twitter":
         return <BsTwitter className={className} />;

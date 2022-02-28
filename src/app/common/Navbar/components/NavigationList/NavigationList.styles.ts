@@ -7,6 +7,10 @@ export const NavigationListContainer = styled.div`
   display: flex;
   align-items: center;
 
+  ${media.lessThan("medium")`
+    display: none;
+  `}
+
   ${media.between("medium", "large")`
     padding: 0 30px;
     width: 65%;

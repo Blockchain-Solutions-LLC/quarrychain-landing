@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Icon } from "../../../../../Icon";
 import { Span } from "../../../../../Typography/Span";
 
 export const Container = styled.div<{ show?: boolean }>`
@@ -15,6 +16,7 @@ export const Container = styled.div<{ show?: boolean }>`
   }) => neutral[50]};
   padding: 16px;
   border-radius: 12px;
+  user-select: none;
 
   ${({ show }) =>
     show &&
@@ -28,6 +30,7 @@ export const Container = styled.div<{ show?: boolean }>`
 `;
 
 export const ItemContainer = styled.div`
+  display: flex;
   width: 100%;
   margin-bottom: 24px;
 
@@ -49,4 +52,45 @@ export const StyledSpan = styled(Span)`
       colors: { neutral },
     },
   }) => neutral[400]};
+`;
+
+export const SubMenuContainer = styled.div`
+  width: 100%;
+`;
+
+export const SubMenuItem = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 8px;
+
+  :not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  :hover {
+    opacity: 0.7;
+  }
+`;
+
+export const SubMenuItemText = styled(Span)`
+  font-size: 16px;
+  line-height: 18px;
+  color: ${({
+    theme: {
+      colors: { neutral },
+    },
+  }) => neutral[300]};
+`;
+
+export const IconContainer = styled.div``;
+
+export const SubMenuItemIcon = styled(Icon)`
+  font-size: 16px;
+  fill: ${({
+    theme: {
+      colors: { neutral },
+    },
+  }) => neutral[200]};
+  margin-left: 8px;
 `;

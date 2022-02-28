@@ -6,12 +6,17 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  ${media.lessThan("medium")`
+    display: none;
+  `}
 `;
 
 export const ButtonContainer = styled.div`
   width: 200px;
   height: 55px;
   margin-right: 32px;
+
   ${media.between("medium", "large")`
     width: 120px;
     margin-right: 0px;
