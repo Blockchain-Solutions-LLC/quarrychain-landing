@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { Fragment, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Container,
@@ -30,8 +30,8 @@ export function Menu({
   return (
     <Container show={show} ref={reference}>
       {items.map((item, index) => (
-        <>
-          <ItemContainer key={index} onClick={() => handleMenuItemClick(item)}>
+        <Fragment key={index}>
+          <ItemContainer onClick={() => handleMenuItemClick(item)}>
             <StyledSpan>{item.name}</StyledSpan>
             {!!item?.subMenuItems?.length && (
               <SubMenuItemIcon name={showSubMenu ? "arrowUp" : "arrowDown"} />
@@ -52,7 +52,7 @@ export function Menu({
               ))}
             </SubMenuContainer>
           )}
-        </>
+        </Fragment>
       ))}
     </Container>
   );

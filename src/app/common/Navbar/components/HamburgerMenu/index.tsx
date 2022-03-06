@@ -30,8 +30,12 @@ export function HamburgerMenu({ hide }: HamburgerMenuProps) {
               <QuarrychainTextLogo src={assetPaths.QUARRYCHAIN_NAME} />
             </QuarrychainTextLogoContainer>
           </LogosContainer>
-          {navbarItems.map((navbarItem) => (
-            <HamburgerNavbarItem item={navbarItem} hideMenu={hide} />
+          {navbarItems.map((navbarItem, index) => (
+            <HamburgerNavbarItem
+              item={navbarItem}
+              hideMenu={hide}
+              key={index++}
+            />
           ))}
         </MainContent>
         <MenuFooter>

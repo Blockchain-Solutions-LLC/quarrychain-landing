@@ -5,11 +5,11 @@ import { navbarItems } from "../../constants";
 export function NavigationList() {
   return (
     <NavigationListContainer>
-      {navbarItems.map((item) => (
+      {navbarItems.map((item, index) => (
         <NavigationItem
           title={item.title}
           url={item.url}
-          key={item.url}
+          key={index++}
           menuItems={item.menuItems}
         />
       ))}
