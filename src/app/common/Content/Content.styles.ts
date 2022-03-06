@@ -1,10 +1,15 @@
 import styled from "styled-components";
 import { Paragraph } from "../Typography/Paragraph";
 import { Title } from "../Typography/Title";
+import { assetPaths } from "../constants";
 
-export const Container = styled.div`
+export const Container = styled.section`
   width: 100%;
+  min-height: 70vh;
   padding-top: 80px;
+  background: url(${assetPaths.POLYGONS_BACKGROUND_2});
+  background-position: center;
+  background-repeat: no-repeat;
 `;
 
 export const PageTitleContainer = styled.div`

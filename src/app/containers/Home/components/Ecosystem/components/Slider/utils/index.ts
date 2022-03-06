@@ -48,12 +48,12 @@ export function handleSliderContentImage(step: number): string {
     case 2:
       return assetPaths.BLOCK_EXPLORER;
     case 3:
-      return assetPaths.QUARRY_COIN;
+      return assetPaths.QUARRY_COIN_HEXAGON;
     case 4:
       return assetPaths.TUFF_TOKEN_HEXAGON;
     case 5:
-      return assetPaths.MOAI_TOKEN;
+      return assetPaths.MOAI_TOKEN_HEXAGON;
     default:
-      return assetPaths.TAP_TOKEN;
+      return assetPaths.TAP_TOKEN_HEXAGON;
   }
 }

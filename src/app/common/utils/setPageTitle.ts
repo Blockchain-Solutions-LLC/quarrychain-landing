@@ -5,5 +5,14 @@ export function setPageTitle(pathname: string): string {
 
     case "/tuff-token":
       return "Tuff Token";
+
+    case "/tap-token":
+      return "Tap Token";
+
+    case "/moai-token":
+      return "Moai Token";
+
+    case "/quarry-coin":
+      return "Quarry Coin";
   }
 }
