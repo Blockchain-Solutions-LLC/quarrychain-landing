@@ -52,6 +52,9 @@ export const Description = styled(Paragraph)`
       colors: { neutral },
     },
   }) => neutral[400]};
+  ${media.lessThan("large")`
+      font-size: 17px;
+  `}
 `;
 
 export const HexagonImageContainer = styled.div`

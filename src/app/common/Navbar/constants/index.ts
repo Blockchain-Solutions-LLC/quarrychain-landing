@@ -14,11 +14,10 @@ export const navbarItems: NavbarItem[] = [
       },
       {
         name: "Token",
-        url: "/",
         subMenuItems: [
           {
             name: "Quarry coin",
-            url: "/",
+            url: "/quarry-coin",
           },
           {
             name: "Tuff token",
@@ -26,11 +25,11 @@ export const navbarItems: NavbarItem[] = [
           },
           {
             name: "Moai token",
-            url: "/",
+            url: "/moai-token",
           },
           {
             name: "Tap token",
-            url: "/",
+            url: "/tap-token",
           },
         ],
       },
@@ -63,6 +62,10 @@ export const navbarItems: NavbarItem[] = [
       {
         name: "Hiring subpage",
         url: "/",
+      },
+      {
+        name: "FAQ",
+        url: "/faq",
       },
     ],
   },

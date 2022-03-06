@@ -26,7 +26,7 @@ export function NavigationItem({ title, url, menuItems }: NavigationItemProps) {
     if (menuItem?.subMenuItems?.length) {
       setShowSubMenu(!showSubMenu);
     } else {
-      if (menuItem?.url.includes("drive")) {
+      if (menuItem?.url.includes("https")) {
         window.open(menuItem?.url, "_blank");
       } else {
         navigate(menuItem.url || "/", { replace: true });

@@ -1,15 +1,15 @@
-import { assetPaths } from "../../common/constants";
-import { Content } from "../../common/Content";
+import { assetPaths } from "../../../common/constants";
+import { Content } from "../../../common/Content";
 import {
   ContentTitle,
   ContentParagraph,
-} from "../../common/Content/Content.styles";
+} from "../../../common/Content/Content.styles";
 import {
   Container,
   ImageContainer,
   MainText,
-  TuffTokenLogo,
-} from "./TuffToken.styles";
+  TokenLogo,
+} from "../Tokens.styles";
 
 export function TuffToken() {
   return (
@@ -46,7 +46,7 @@ export function TuffToken() {
           </ContentParagraph>
         </MainText>
         <ImageContainer>
-          <TuffTokenLogo src={assetPaths.TUFF_TOKEN} />
+          <TokenLogo src={assetPaths.TUFF_TOKEN} />
         </ImageContainer>
       </Container>
     </Content>

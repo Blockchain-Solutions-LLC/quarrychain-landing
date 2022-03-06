@@ -15,7 +15,7 @@ export const ImageContainer = styled.div`
   margin-left: 50px;
 `;
 
-export const TuffTokenLogo = styled.img`
+export const TokenLogo = styled.img`
   width: 100%;
   height: 100%;
 `;
