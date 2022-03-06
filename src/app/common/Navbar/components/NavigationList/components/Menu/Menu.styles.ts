@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Icon } from "../../../../../Icon";
 import { Span } from "../../../../../Typography/Span";
 
@@ -17,6 +18,10 @@ export const Container = styled.div<{ show?: boolean }>`
   padding: 16px;
   border-radius: 12px;
   user-select: none;
+
+  ${media.between("medium", "large")`
+    min-width: 140px;
+  `};
 
   ${({ show }) =>
     show &&
@@ -52,6 +57,11 @@ export const StyledSpan = styled(Span)`
       colors: { neutral },
     },
   }) => neutral[400]};
+
+  ${media.between("medium", "large")`
+    font-size: 14px;
+    line-height: 14px;
+  `};
 `;
 
 export const SubMenuContainer = styled.div`
@@ -81,6 +91,10 @@ export const SubMenuItemText = styled(Span)`
       colors: { neutral },
     },
   }) => neutral[300]};
+  ${media.between("medium", "large")`
+    font-size: 13px;
+    line-height: 14px;
+  `};
 `;
 
 export const IconContainer = styled.div``;

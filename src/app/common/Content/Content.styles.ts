@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Paragraph } from "../Typography/Paragraph";
 import { Title } from "../Typography/Title";
 import { assetPaths } from "../constants";
+import media from "styled-media-query";
 
 export const Container = styled.section`
   width: 100%;
@@ -10,6 +11,9 @@ export const Container = styled.section`
   background: url(${assetPaths.POLYGONS_BACKGROUND_2});
   background-position: center;
   background-repeat: no-repeat;
+  ${media.lessThan("medium")`
+    padding-top: 0px;  
+  `}
 `;
 
 export const PageTitleContainer = styled.div`

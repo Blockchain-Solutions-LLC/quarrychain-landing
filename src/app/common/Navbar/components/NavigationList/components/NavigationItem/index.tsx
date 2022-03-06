@@ -22,6 +22,10 @@ export function NavigationItem({ title, url, menuItems }: NavigationItemProps) {
     }
   }, [showMenu]);
 
+  function handleItemClick() {
+    setShowMenu(!showMenu);
+  }
+
   function handleMenuItemClick(menuItem: MenuItemType) {
     if (menuItem?.subMenuItems?.length) {
       setShowSubMenu(!showSubMenu);
@@ -33,11 +37,13 @@ export function NavigationItem({ title, url, menuItems }: NavigationItemProps) {
       }
     }
   }
-
   return (
-    <NavigationItemContainer onClick={() => setShowMenu(true)}>
-      <StyledSpan>{title}</StyledSpan>
-      <InvisibleDiv onMouseLeave={() => setShowMenu(false)} height={menuHeight}>
+    <NavigationItemContainer>
+      <StyledSpan onClick={() => handleItemClick()}>{title}</StyledSpan>
+      <InvisibleDiv
+        onMouseLeave={() => showMenu && setShowMenu(false)}
+        height={menuHeight}
+      >
         {!!menuItems?.length && (
           <Menu
             items={menuItems}
