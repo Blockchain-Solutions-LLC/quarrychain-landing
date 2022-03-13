@@ -24,9 +24,11 @@ const colors = {
     "0": "#EF476F",
   },
   regular: {
-    "0": "rgba(238, 29, 35, 0.5)",
-    "100": "rgba(0, 165, 79, 0.5)",
-    "200": "rgba(0, 174, 239, 0.5)",
+    "lightRed": "rgba(238, 29, 35, 0.5)",
+    "darkRed": "#E45458",
+    "lightGreen": "rgba(0, 165, 79, 0.5)",
+    "darkGreen": "#30B570",
+    "lightBlue": "rgba(0, 174, 239, 0.5)",
   },
 };
 
