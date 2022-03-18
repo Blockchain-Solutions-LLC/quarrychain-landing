@@ -25,7 +25,7 @@ export function Menu({
     if (show) {
       setMenuHeight(reference?.current?.clientHeight + 80);
     }
-  }, [show]);
+  }, [show, setMenuHeight]);
 
   return (
     <Container show={show} ref={reference}>

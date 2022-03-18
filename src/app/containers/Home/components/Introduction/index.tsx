@@ -1,5 +1,4 @@
 import { assetPaths } from "../../../../common/constants";
-import { Title } from "../../../../common/Typography/Title";
 import {
   ButtonsContainer,
   Container,
