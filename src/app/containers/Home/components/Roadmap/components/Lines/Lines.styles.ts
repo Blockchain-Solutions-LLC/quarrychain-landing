@@ -16,7 +16,7 @@ export const Container = styled.div<{ vertical?: boolean, width?: number }>`
 
 export const SingleLine = styled.div`
   height: 20px;
-  width: 5px;
+  width: 4px;
   background: ${({ theme: { colors: { neutral } } }) => neutral[100]};
   margin: 5px;
 `
