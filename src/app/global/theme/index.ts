@@ -34,6 +34,7 @@ const colors = {
 
 const fonts = {
   standard: "'DIN', sans-serif",
+  bold: "'DIN Bold', sans-serif"
 };
 
 export const AppTheme = {

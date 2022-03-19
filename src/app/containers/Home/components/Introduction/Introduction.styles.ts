@@ -73,29 +73,47 @@ export const SloganContainer = styled.div`
 `;
 
 export const StyledTitle = styled(Title)`
+  align-self: flex-start;
+  font-size: 4em;
+  line-height: 108px;
+  letter-spacing: 0.3555em;
+  font-weight: 600;
+
   ${media.lessThan("large")`
-   font-size: 40px;
-   line-height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.2555em;
+  `}
+
+  ${media.lessThan("medium")`
+    align-self: center;
+    font-size: 2em;
+    line-height: 36px;
+    letter-spacing: 0.15em;
   `}
 `;
 
 export const StyledSpan = styled(Span)`
   color: ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => neutral[200]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[200]};
   font-size: 32px;
-  line-height: 42px;
+  line-height: 51px;
+  font-weight: 400px;
+  letter-spacing: 0.275em;
+
+  ${media.lessThan("large")`
+   font-size: 20px;
+   line-height: 20px;
+   letter-spacing: 0.08em;
+  `}
 
   ${media.lessThan("medium")`
    font-size: 18px;
    line-height: 18px;
-  `}
-
-  ${media.lessThan("large")`
-   font-size: 22px;
-   line-height: 22px;
+   letter-spacing: 0.02em;
   `}
 `;
 
@@ -110,7 +128,7 @@ export const ButtonsContainer = styled.div`
   `}
 `;
 
-export const StyledButton = styled(Button)<{ withMarginRight?: boolean }>`
+export const StyledButton = styled(Button) <{ withMarginRight?: boolean }>`
   max-width: 200px;
 
   ${({ withMarginRight }) =>

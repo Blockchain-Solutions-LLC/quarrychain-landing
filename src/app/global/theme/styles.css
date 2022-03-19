@@ -12,24 +12,8 @@
 
 @font-face {
   font-family: "DIN Bold";
-  src: url("din_bold-webfont.woff2") format("woff2"),
-    url("din_bold-webfont.woff") format("woff");
+  src: url("https://drive.google.com/file/d/1i-YjH-bjNdDI5E6MxbExsSU04pqJXHqC/view?usp=sharing") format("woff2"),
+    url("https://drive.google.com/file/d/1hhnf3im0ZFMbRYZadUlBs054hMmfcHln/view?usp=sharing") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
-/* @font-face {
-  font-family: "DIN Dark";
-  src: url("din_black-webfont.woff2") format("woff2"),
-    url("din_black-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "DIN Medium";
-  src: url("din_medium-webfont.woff2") format("woff2"),
-    url("din_medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-} */
