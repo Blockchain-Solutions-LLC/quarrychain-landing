@@ -29,8 +29,8 @@ export function MoaiToken() {
             the collective foundations by design. Whereas major structural
             changes are voted on by the community, the day-to-day operations,
             rebalancing of pools and ratios, business strategy, and overall
-            development is ultimately decided by the Quarrychain Development
-            Team.
+            development is ultimately decided by the Quarrychain development
+            team.
           </ContentParagraph>
         </MainText>
         <ImageContainer>

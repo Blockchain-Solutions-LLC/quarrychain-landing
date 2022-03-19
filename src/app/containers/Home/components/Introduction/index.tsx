@@ -19,11 +19,11 @@ export function Introduction() {
       <Content>
         <TitleAndButtonsContainer>
           <StyledTitle>
-            Quarrychain the future of decentralized exchanges.
+            Quarrychain
           </StyledTitle>
           <SloganContainer>
             <StyledSpan>
-              The most rewarding decentralized platform in the universe.
+              An Advanced Decentralized Blockchain Platform
             </StyledSpan>
           </SloganContainer>
           <ImageContainerMobile>
