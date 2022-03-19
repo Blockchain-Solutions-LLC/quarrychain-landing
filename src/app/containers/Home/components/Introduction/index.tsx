@@ -23,7 +23,7 @@ export function Introduction() {
           </StyledTitle>
           <SloganContainer>
             <StyledSpan>
-              the most rewarding decentralized platform in the universe.
+              The most rewarding decentralized platform in the universe.
             </StyledSpan>
           </SloganContainer>
           <ImageContainerMobile>

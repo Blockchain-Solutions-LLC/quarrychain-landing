@@ -16,19 +16,19 @@ export const navbarItems: NavbarItem[] = [
         name: "Token",
         subMenuItems: [
           {
-            name: "Quarry coin",
+            name: "Quarry Coin",
             url: "/quarry-coin",
           },
           {
-            name: "Tuff token",
+            name: "Tuff Token",
             url: "/tuff-token",
           },
           {
-            name: "Moai token",
+            name: "Moai Token",
             url: "/moai-token",
           },
           {
-            name: "Tap token",
+            name: "Tap Token",
             url: "/tap-token",
           },
         ],

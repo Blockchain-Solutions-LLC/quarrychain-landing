@@ -18,15 +18,15 @@ export function QuarryCoin() {
         <MainText>
           <ContentTitle>What is Quary Coin?</ContentTitle>
           <ContentParagraph>
-            QuarryCoin is the official cryptocurrency for the Quarrychain
-            Protocol. Quarrycoin aims to be a peer-to-peer internet currency
-            that enables instant low cost transactions to anyone in the world.
-            Quarrycoin will feature faster transaction confirmation times and
+            Quarry Coin is the official cryptocurrency for the Quarrychain
+            Protocol. Quarry Coin aims to be a peer-to-peer internet currency
+            that enables instant low-cost transactions to anyone in the world.
+            Quarry Coin will feature faster transaction-confirmation times and
             improved storage efficiency than the leading math-based currency.
           </ContentParagraph>
         </MainText>
         <ImageContainer>
-          <TokenLogo src={assetPaths.QUARRY_COIN} />
+          <TokenLogo src={assetPaths.QUARRY_COIN_NO_BORDER} />
         </ImageContainer>
       </Container>
     </Content>

@@ -12,6 +12,7 @@ export enum assetPaths {
   BLOCK_EXPLORER = "assets/block_explorer.png",
   QUARRY_COIN_HEXAGON = "assets/quarry_coin_hexagon.png",
   QUARRY_COIN = "assets/quarry_coin.png",
+  QUARRY_COIN_NO_BORDER = "assets/quarry_coin_no_border.png",
   TUFF_TOKEN_HEXAGON = "assets/tuff_token_hexagon.png",
   TUFF_TOKEN = "assets/tuff_token.png",
   MOAI_TOKEN_HEXAGON = "assets/moai_token_hexagon.png",

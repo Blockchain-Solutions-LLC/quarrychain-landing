@@ -10,13 +10,13 @@ export const summaryContentArray = [
   {
     title: "High Availability",
     description:
-      "The Quarrychain Network provides a more reliable network structure, user asset, intrinsic value and a higher degree of decentralization consensus that come with an improved rewards distribution mechanism.",
+      "The Quarrychain Network provides a more reliable network structure, user asset, intrinsic value and a higher degree of decentralization consensus that comes with an improved rewards-distribution mechanism.",
     imageUrl: assetPaths.HIGH_AVAILABILITY,
   },
   {
-    title: "High Sacalability",
+    title: "High Scalability",
     description:
-      "Applications are given a wider variety of ways to be deployed in the Quarrychain Ecosystem because of its scalability and highly effective smart contract(QRY-20). It can support enormous numbers of users.",
+      "Because of its scalability and highly effective smart contract (QRY-20), the Quarrychain ecosystem gives applications a wider variety of ways to be deployed. It can support an enormous number of users.",
     imageUrl: assetPaths.HIGH_SCALABILITY,
   },
 ];
