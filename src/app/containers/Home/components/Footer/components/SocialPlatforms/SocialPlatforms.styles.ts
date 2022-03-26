@@ -16,7 +16,7 @@ export const SocialMediaIcons = styled.div<{ smallSize?: boolean }>`
   column-gap: 40px;
   row-gap: 40px;
 
-  ${media.between("medium", "large")`
+  ${media.between("medium", "huge")`
     column-gap: 12px;
     row-gap: 12px;
   `};
@@ -44,10 +44,10 @@ export const SingleIcon = styled.div<{
   justify-content: center;
   border: 1px solid
     ${({
-      theme: {
-        colors: { neutral },
-      },
-    }) => neutral[0]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[0]};
   background: inherit;
   border-radius: 50%;
   cursor: pointer;
@@ -56,35 +56,35 @@ export const SingleIcon = styled.div<{
   svg {
     font-size: 24px;
     fill: ${({
-      theme: {
-        colors: { neutral },
-      },
-    }) => neutral[0]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[0]};
   }
 
   :hover {
     background: ${({
-      theme: {
-        colors: { neutral },
-      },
-    }) => neutral[0]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[0]};
 
     svg {
       fill: ${({
-        theme: {
-          colors: { secondary },
-        },
-      }) => secondary[200]};
+  theme: {
+    colors: { secondary },
+  },
+}) => secondary[200]};
       background: ${({
-        theme: {
-          colors: { neutral },
-        },
-      }) => neutral[0]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[0]};
       transition: all 0.3s ease-in-out;
     }
   }
 
-  ${media.between("medium", "large")`
+  ${media.between("medium", "huge")`
    height: 40px;
    width: 40px;
    svg {
@@ -103,11 +103,11 @@ export const SingleIcon = styled.div<{
   `}
 
   ${({
-    invertColors,
-    theme: {
-      colors: { neutral, secondary },
-    },
-  }) =>
+      invertColors,
+      theme: {
+        colors: { neutral, secondary },
+      },
+    }) =>
     invertColors &&
     `
     background: ${secondary[200]};

@@ -31,12 +31,12 @@ export const Content = styled.div`
 export const StyledTitle = styled(Title)`
   margin-bottom: 40px;
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
     text-align: center;
 
   `}
 
-  ${media.between("medium", "large")`
+  ${media.between("large", "huge")`
     font-size: 40px;
     line-height: 40px;
   `}

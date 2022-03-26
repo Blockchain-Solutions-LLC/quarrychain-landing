@@ -12,6 +12,19 @@ export const Container = styled.div<{ quarter?: number }>`
 
   ${({ quarter }) => quarter && setHexagonPositionPerQuarter(quarter)}
 
+  ${media.lessThan("huge")`
+    top: -70px;
+    left: 310px;
+  `}
+
+  @media (max-width: 1366px) {
+    left: 291px;
+  }
+
+  @media (max-width: 1280px) {
+    left: 270px;
+  }
+
   ${media.lessThan("large")`
     top: -69px; 
     left: 112px;
@@ -19,7 +32,7 @@ export const Container = styled.div<{ quarter?: number }>`
 
   ${media.lessThan("medium")`
     top: -75px; 
-    left: 122px;
+    left: 121px;
   `}
 `;
 

@@ -79,7 +79,7 @@ export const StyledTitle = styled(Title)`
   letter-spacing: 0.3555em;
   font-weight: 600;
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
     font-size: 40px;
     line-height: 40px;
     letter-spacing: 0.2555em;
@@ -104,7 +104,7 @@ export const StyledSpan = styled(Span)`
   font-weight: 400px;
   letter-spacing: 0.275em;
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
    font-size: 20px;
    line-height: 20px;
    letter-spacing: 0.08em;
@@ -146,7 +146,7 @@ export const ImageContainer = styled.div`
     display: none;
   `}
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
     width: 43%;
   `}
 }

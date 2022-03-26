@@ -10,6 +10,10 @@ export const Container = styled.div`
   box-shadow: 4px 8px 30px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 24px 32px;
+  
+  ${media.between('large', 'huge')`
+    max-width: none;
+  `}
 `;
 
 export const StyledTitle = styled(Title)`
@@ -17,8 +21,11 @@ export const StyledTitle = styled(Title)`
   line-height: 36px;
   margin-bottom: 8px;
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
     font-size: 22px;
+  `}
+
+  ${media.lessThan("large")`
     text-align: center;
   `}
 
@@ -40,7 +47,7 @@ export const ItemText = styled(Span)`
   line-height: 28px;
   color: ${({ theme: { colors: { secondary } } }) => secondary[0]};
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("huge")`
     font-size: 16px;
     text-align: center;
   `}
