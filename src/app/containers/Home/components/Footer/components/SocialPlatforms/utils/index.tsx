@@ -1,5 +1,5 @@
 import { Icon } from "../../../../../../../common/Icon";
-import { socialMediaIconNames } from "../../../constants";
+import { socialMediaIcons } from "../../../constants";
 import { SingleIcon } from "../SocialPlatforms.styles";
 
 export function socialPlatformItemsToShow(
@@ -10,24 +10,29 @@ export function socialPlatformItemsToShow(
   if (!numberOfItems) {
     return (
       <>
-        {socialMediaIconNames.map((icon, index) => (
-          <SingleIcon key={index} invertColors={invertColors}>
-            <Icon name={icon} />
+        {socialMediaIcons.map((socialMedia, index) => (
+          <SingleIcon key={index} invertColors={invertColors} onClick={() =>
+            window.open(
+              socialMedia.url,
+              "_blank"
+            )
+          }>
+            <Icon name={socialMedia.name} />
           </SingleIcon>
         ))}
       </>
     );
   } else {
-    const itemsToDelete = socialMediaIconNames.length - numberOfItems;
+    const itemsToDelete = socialMediaIcons.length - numberOfItems;
     return (
       <>
-        {socialMediaIconNames.slice(0, -itemsToDelete).map((icon, index) => (
+        {socialMediaIcons.slice(0, -itemsToDelete).map((socialMedia, index) => (
           <SingleIcon
             key={index}
             invertColors={invertColors}
             smallSize={smallSize}
-          >
-            <Icon name={icon} />
+            onClick={() => window.open(socialMedia.url, "_blank")}>
+            <Icon name={socialMedia.name} />
           </SingleIcon>
         ))}
       </>
