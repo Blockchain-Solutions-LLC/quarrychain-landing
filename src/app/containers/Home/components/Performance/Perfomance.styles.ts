@@ -29,7 +29,7 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
     width: 80%;
   `}
 
@@ -41,11 +41,12 @@ export const Content = styled.div`
 export const StyledTitle = styled(Title)`
   margin-bottom: 60px;
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
     text-align: center;
+    margin-bottom: 30px;
   `}
 
-  ${media.between("medium", "large")`
+  ${media.between("large", "huge")`
     font-size: 40px;
     line-height: 40px;
   `}
@@ -81,7 +82,7 @@ export const ChartImage = styled.img`
     display: none;
   `}
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
     height: auto;
     width: 70%;
   `}
@@ -91,11 +92,11 @@ export const ChartCardContainer = styled.div`
   width: 100%;
   max-width: 218px;
 
-  ${media.between("medium", "large")`
+  ${media.between("large", "huge")`
     width: 25%;
   `}
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
     height: auto;
   `}
 
@@ -130,8 +131,8 @@ export const DisclaimerContainer = styled.div``;
 export const StyledSpan = styled(Span)`
   font-size: 16px;
   color: ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => neutral[200]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[200]};
 `;

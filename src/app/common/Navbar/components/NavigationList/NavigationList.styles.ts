@@ -11,7 +11,7 @@ export const NavigationListContainer = styled.div`
     display: none;
   `}
 
-  ${media.between("medium", "large")`
+  ${media.between("medium", "huge")`
     padding: 0 30px;
     width: 65%;
     justify-content: space-between;

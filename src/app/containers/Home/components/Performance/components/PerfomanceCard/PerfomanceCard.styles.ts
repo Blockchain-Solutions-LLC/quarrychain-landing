@@ -10,10 +10,10 @@ export const Container = styled.div`
   justify-content: space-around;
   box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.2);
   background: ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => neutral[0]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[0]};
   border-radius: 12px;
   padding: 20px;
 `;
@@ -37,7 +37,7 @@ export const TextContainer = styled.div<{ isTitle?: boolean }>`
     `}
 `;
 
-export const StyledSpan = styled(Span)<{ isTitle?: boolean }>`
+export const StyledSpan = styled(Span) <{ isTitle?: boolean }>`
 font-size: 24px;
 line-height: 31px;
 color ${({
@@ -46,23 +46,23 @@ color ${({
   },
 }) => neutral[400]};
 
-${({
-  isTitle,
-  theme: {
-    colors: { neutral },
-  },
-}) =>
-  isTitle &&
-  `
-  color: ${neutral[150]};
-`};
-
-${media.lessThan("large")`
+${media.lessThan("huge")`
   font-size: 16px;
 `}
 
 ${media.lessThan("medium")`
   font-size: 20px;
 `}
+
+${({
+  isTitle,
+  theme: {
+    colors: { neutral },
+  },
+}) =>
+    isTitle &&
+    `
+  color: ${neutral[150]};
+`};
 
 `;

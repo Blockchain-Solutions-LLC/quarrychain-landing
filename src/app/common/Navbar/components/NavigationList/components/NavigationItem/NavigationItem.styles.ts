@@ -18,12 +18,17 @@ export const NavigationItemContainer = styled.div`
 
   :hover {
     background-color: ${({
-      theme: {
-        colors: { neutral },
-      },
-    }) => neutral[50]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[50]};
     transition: all 0.3s ease-in-out;
   }
+
+  ${media.between("large", "huge")`
+    min-width: 80;
+    margin-right: 25px;
+  `};
 
   ${media.between("medium", "large")`
     min-width: 0;
@@ -47,10 +52,10 @@ export const InvisibleDiv = styled.div<{ height?: number }>`
 
 export const StyledSpan = styled(Span)`
   color ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => neutral[400]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[400]};
   user-select: none;
   font-size: 18px;
   line-height: 18px;

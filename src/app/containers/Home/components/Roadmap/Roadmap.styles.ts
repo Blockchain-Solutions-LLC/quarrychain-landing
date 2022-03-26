@@ -14,7 +14,7 @@ export const Container = styled.section`
   padding: 20px 0px;
   background: url(${assetPaths.POLYGONS_BACKGROUND});
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
     display: none;  
   `}
 `;
@@ -37,14 +37,15 @@ export const RoadmapContent = styled.div`
 export const StyledTitle = styled(Title)`
   margin-bottom: 70px;
 
+  ${media.between("large", "huge")`
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 120px;
+  `}
+
   ${media.lessThan("large")`
     text-align: center;
     margin-bottom: 140px;
-  `}
-
-  ${media.between("medium", "large")`
-    font-size: 40px;
-    line-height: 40px;
   `}
 
   ${media.lessThan("medium")`
@@ -60,7 +61,11 @@ export const QuarterContainer = styled.div<{ quarter?: number, mobile?: boolean 
 
   ${({ quarter }) => quarter && SetStylesPerQuarter(quarter)}
 
-  ${media.lessThan("large")`
+  ${media.between('large', 'huge')`
+    width: 50%;
+  `}
+
+  ${media.lessThan("huge")`
     border: none;
     margin-bottom: 90px;
 

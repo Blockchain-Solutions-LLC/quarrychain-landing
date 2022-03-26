@@ -8,10 +8,10 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   background: ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => neutral[50]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[50]};
 
   ${media.lessThan("large")`
     height: auto;
@@ -31,12 +31,12 @@ export const Content = styled.div`
 export const StyledTitle = styled(Title)`
   margin-bottom: 80px;
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
+    font-size: 40px;
     text-align: center;
   `}
 
   ${media.between("medium", "large")`
-    font-size: 40px;
     margin-bottom: 20px;
   `};
 

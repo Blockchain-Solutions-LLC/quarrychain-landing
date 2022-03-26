@@ -10,10 +10,10 @@ export const Container = styled.footer`
   justify-content: center;
   align-items: center;
   background: ${({
-    theme: {
-      colors: { secondary },
-    },
-  }) => secondary[200]};
+  theme: {
+    colors: { secondary },
+  },
+}) => secondary[200]};
 
   ${media.lessThan("large")`
     height: auto;
@@ -26,7 +26,7 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
 
-  ${media.between("medium", "large")`
+  ${media.between("medium", "huge")`
     width: 80%;
   `};
 
@@ -43,12 +43,12 @@ export const StyledTitle = styled(Title)`
   line-height: 30px;
   margin-bottom: 24px;
   color: ${({
-    theme: {
-      colors: { secondary },
-    },
-  }) => secondary[50]};
+  theme: {
+    colors: { secondary },
+  },
+}) => secondary[50]};
 
-  ${media.between("medium", "large")`
+  ${media.between("medium", "huge")`
     font-size: 20px;
     line-height: 20px;
   `};
@@ -67,27 +67,27 @@ export const TextContainer = styled.div<{ withHover?: boolean }>`
   `}
 `;
 
-export const StyledSpan = styled(Span)<{ darker?: boolean }>`
+export const StyledSpan = styled(Span) <{ darker?: boolean }>`
   font-size: 20px;
   line-height: 25px;
   color: ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => neutral[25]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[25]};
 
   ${({
-    theme: {
-      colors: { neutral },
-    },
-    darker,
-  }) =>
+  theme: {
+    colors: { neutral },
+  },
+  darker,
+}) =>
     darker &&
     `
     color: ${neutral[200]};
   `}
 
-  ${media.between("medium", "large")`
+  ${media.between("medium", "huge")`
     font-size: 15px;
     line-height: 15px;
   `};

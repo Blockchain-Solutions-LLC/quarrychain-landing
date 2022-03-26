@@ -8,6 +8,10 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  ${media.between("large", "huge")`
+    width: 35%;
+  `}
+
   ${media.between("medium", "large")`
     width: 50%;
   `}
@@ -22,10 +26,10 @@ export const StepCircle = styled.div<{ isCurrent?: boolean }>`
   height: 100%;
   border-radius: 50%;
   background: ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => neutral[200]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[200]};
   opacity: 0.5;
   cursor: pointer;
 

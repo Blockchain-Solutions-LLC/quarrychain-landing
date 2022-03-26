@@ -17,7 +17,7 @@ export const TextLogoImage = styled.img`
   height: 24px;
   margin-left: 13px;
 
-  ${media.between("medium", "large")`
+  ${media.between("medium", "huge")`
     height: 18px;
   `};
 `;

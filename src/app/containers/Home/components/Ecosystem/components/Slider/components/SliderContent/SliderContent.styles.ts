@@ -3,10 +3,12 @@ import media from "styled-media-query";
 import { Paragraph } from "../../../../../../../../common/Typography/Paragraph";
 import { Title } from "../../../../../../../../common/Typography/Title";
 import { handleSliderContentColor } from "../../utils";
+const isSafari = (window as any).safari;
+
 
 export const Container = styled.div<{ step: number }>`
   width: 75%;
-  height: 350px;
+  height: 360px;
   display: flex;
   justify-content: space-between;
   background-color: ${({ step }) => step && handleSliderContentColor(step)};
@@ -21,12 +23,26 @@ export const Container = styled.div<{ step: number }>`
     padding: 20px;
     margin-bottom: 40px;
   `}
+
+  ${isSafari && `
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  `}
 `;
 
 export const TitleAndDescriptionContainer = styled.div`
   width: 80%;
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan("huge")`
+    width: 72%;
+  `}
+
   ${media.lessThan("large")`
     width: 100%;
     align-items: center;
@@ -37,10 +53,10 @@ export const StyledTitle = styled(Title)`
   font-size: 32px;
   line-height: 41px;
   color: ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => neutral[400]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[400]};
   margin-bottom: 16px;
 `;
 
@@ -48,11 +64,11 @@ export const Description = styled(Paragraph)`
   font-size: 20px;
   line-height: 25px;
   color: ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => neutral[400]};
-  ${media.lessThan("large")`
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[400]};
+  ${media.lessThan("huge")`
       font-size: 17px;
   `}
 `;
@@ -60,12 +76,27 @@ export const Description = styled(Paragraph)`
 export const HexagonImageContainer = styled.div`
   height: 100%;
 
+  ${media.lessThan("huge")`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `}
+
   ${media.lessThan("large")`
       display: none;
   `}
+
 `;
 
 export const HexagonImage = styled.img`
   width: 100%;
   height: 100%;
+
+  ${media.lessThan("huge")`
+    height: 80%;
+  `}
+
+  ${isSafari && `
+    width: auto;
+  `}
 `;

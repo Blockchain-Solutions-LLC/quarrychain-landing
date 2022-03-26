@@ -8,6 +8,11 @@ export const Container = styled.div`
   max-width: 420px;
   position: relative;
 
+  ${media.between("large", "huge")`
+    max-width: 300px;
+  `};
+
+
   ${media.between("medium", "large")`
     max-width: 200px;
   `};
@@ -25,10 +30,10 @@ export const Content = styled.div`
   padding: 22px 30px;
   box-shadow: 4px 8px 30px 0px rgba(0, 0, 0, 0.2);
   background ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => neutral[0]};
+  theme: {
+    colors: { neutral },
+  },
+}) => neutral[0]};
 
   ${media.lessThan("large")`
     min-height: 230px;
@@ -46,7 +51,7 @@ export const StyledTitle = styled(Title)`
   line-height: 41px;
   margin-bottom: 8px;
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
     font-size: 25px;
   `}
 `;
@@ -55,12 +60,12 @@ export const StyledParagraph = styled(Paragraph)`
   font-size: 18px;
   line-height: 18px;
   color: ${({
-    theme: {
-      colors: { secondary },
-    },
-  }) => secondary[0]};
+  theme: {
+    colors: { secondary },
+  },
+}) => secondary[0]};
 
-  ${media.lessThan("large")`
+  ${media.lessThan("huge")`
     font-size: 15px;
   `}
 `;
@@ -75,6 +80,10 @@ export const ImageContainer = styled.div`
     height: 50px;
   `}
 
+  ${media.between("large", "huge")`
+    left: 80px;
+  `};
+  
   ${media.between("medium", "large")`
     left: auto;
     bottom: auto;
