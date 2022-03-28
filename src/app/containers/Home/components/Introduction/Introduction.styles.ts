@@ -15,8 +15,8 @@ export const Container = styled.section`
   background-repeat: no-repeat;
   padding-top: 80px;
 
-  ${isSafari && media.between("medium", "large")`
-    height: 70%;
+  ${media.between("medium", "large")`
+    height: ${isSafari ? "70%" : "50%"};
   `}
 
   ${media.between("medium", "large")`
