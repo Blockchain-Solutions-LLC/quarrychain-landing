@@ -4,6 +4,7 @@ import { Button } from "../../../../common/Button";
 import { assetPaths } from "../../../../common/constants";
 import { Span } from "../../../../common/Typography/Span";
 import { Title } from "../../../../common/Typography/Title";
+const isSafari = (window as any).safari;
 
 export const Container = styled.section`
   height: 100%;
@@ -13,6 +14,10 @@ export const Container = styled.section`
   background-image: url(${assetPaths.HOME_BACKGROUND});
   background-repeat: no-repeat;
   padding-top: 80px;
+
+  ${isSafari && media.between("medium", "large")`
+    height: 70%;
+  `}
 
   ${media.between("medium", "large")`
     height: 50%;
@@ -54,6 +59,7 @@ export const TitleAndButtonsContainer = styled.div`
 
   ${media.between("medium", "large")`
     width: 50%;
+    align-self: center;
   `}
 `;
 
