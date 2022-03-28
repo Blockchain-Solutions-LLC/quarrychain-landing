@@ -19,10 +19,6 @@ export const Container = styled.section`
     height: ${isSafari ? "70%" : "50%"};
   `}
 
-  ${media.between("medium", "large")`
-    height: 50%;
-  `};
-
   ${media.lessThan("medium")`
     padding: 20px 0px;
     height: auto;
