@@ -2,6 +2,7 @@ import styled from "styled-components";
 import media from "styled-media-query";
 import { Paragraph } from "../../../../../../common/Typography/Paragraph";
 import { Title } from "../../../../../../common/Typography/Title";
+const isSafari = (window as any).safari;
 
 export const Container = styled.div`
   width: 100%;
@@ -102,4 +103,8 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
+
+  ${isSafari && `
+    width: auto;
+  `}
 `;
