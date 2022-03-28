@@ -16,7 +16,7 @@ export const Container = styled.section`
   padding-top: 80px;
 
   ${media.between("medium", "large")`
-    height: ${isSafari ? "70%" : "50%"};
+    height: ${isSafari ? "75%" : "50%"};
   `}
 
   ${media.lessThan("medium")`
@@ -127,6 +127,7 @@ export const ButtonsContainer = styled.div`
 
   ${media.lessThan("medium")`
    margin-top: auto;
+   justify-content: center;
   `}
 `;
 
