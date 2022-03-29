@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { assetPaths } from "../../../constants";
-import { LogoContainer, LogoImage, TextLogoImage } from "./Logo.styles";
+import { LogoContainer, LogoImage, TextLogoImage, ImageContainer } from "./Logo.styles";
 
 export function Logo() {
   const navigate = useNavigate();
@@ -11,8 +11,12 @@ export function Logo() {
 
   return (
     <LogoContainer onClick={handleLogoClick}>
-      <LogoImage src={assetPaths.LOGO} />
-      <TextLogoImage src={assetPaths.QUARRYCHAIN_NAME} />
+      <ImageContainer>
+        <LogoImage src={assetPaths.LOGO} />
+      </ImageContainer>
+      <ImageContainer>
+        <TextLogoImage src={assetPaths.QUARRYCHAIN_NAME} />
+      </ImageContainer>
     </LogoContainer>
   );
 }
