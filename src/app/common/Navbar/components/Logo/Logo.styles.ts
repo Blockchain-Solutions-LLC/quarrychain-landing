@@ -13,6 +13,9 @@ export const LogoImageContainer = styled.div`
   height: 46px;
   ${isSafari && `
     width: 46px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   `}
 `
 
