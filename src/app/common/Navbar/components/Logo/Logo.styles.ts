@@ -2,7 +2,6 @@ import styled from "styled-components";
 import media from "styled-media-query";
 const isSafari = (window as any).safari || navigator.userAgent.match(/(iPod|iPhone|iPad)/) || navigator.userAgent.match(/AppleWebKit/);
 
-console.log("logo", isSafari);
 export const LogoContainer = styled.div`
   height: 46px;
   display: flex;
