@@ -25,8 +25,8 @@ export const LogoImage = styled.img`
 
   ${isSafari && `
     display: block;
-    width: auto;
-    height: auto;
+    width: intrinsic;
+    height: intrinsic;
   `}
 `;
 
