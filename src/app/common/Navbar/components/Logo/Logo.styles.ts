@@ -9,17 +9,12 @@ export const LogoContainer = styled.div`
   cursor: pointer;
 `;
 
-export const ImageContainer = styled.div`
-  height: 46px;
-`
-
 export const LogoImage = styled.img`
   width: 100%;
-  height: 100%;
 
   ${isSafari && `
     display: block;
-    width: auto !important;
+    height: auto !important;
   `}
 `;
 
