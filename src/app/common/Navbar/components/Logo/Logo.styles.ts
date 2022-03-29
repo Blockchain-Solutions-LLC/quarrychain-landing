@@ -15,7 +15,7 @@ export const LogoImage = styled.img`
 
   ${isSafari && `
     width: auto !important;
-    align-self: center;
+    align-self: flex-start;
   `}
 `;
 
