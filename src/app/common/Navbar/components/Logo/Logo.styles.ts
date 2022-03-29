@@ -9,15 +9,16 @@ export const LogoContainer = styled.div`
   cursor: pointer;
 `;
 
+export const LogoImageContainer = styled.div`
+  height: 46px;
+  ${isSafari && `
+    width: 46px !important;
+  `}
+`
+
 export const LogoImage = styled.img`
   width: 100%;
   height: 100%;
-
-  ${isSafari && `
-    height: 46px;
-    max-width: 46px !important;
-    align-self: flex-start;
-  `}
 `;
 
 export const TextLogoImage = styled.img`
