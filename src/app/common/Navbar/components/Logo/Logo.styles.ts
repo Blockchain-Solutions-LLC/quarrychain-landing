@@ -14,8 +14,8 @@ export const LogoImage = styled.img`
   height: 100%;
 
   ${isSafari && `
-    width: auto !important;
-    align-self: flex-start;
+    height: 46px;
+    width: 46px;
   `}
 `;
 

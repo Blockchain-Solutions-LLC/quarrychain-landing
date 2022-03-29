@@ -76,9 +76,15 @@ export const ImageContainer = styled.div`
   height: 150px;
   bottom: -100px;
   left: 140px;
+  ${isSafari && `
+      width: 153px;
+  `}
 
   ${media.lessThan("large")`
     height: 50px;
+    ${isSafari && `
+      width: 50px;
+    `}
   `}
 
   ${media.between("large", "huge")`
@@ -103,9 +109,4 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-
-  ${isSafari && `
-    display: block;
-    width: intrinsic !important;
-  `}
 `;
