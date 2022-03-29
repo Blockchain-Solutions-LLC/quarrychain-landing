@@ -5,7 +5,7 @@ import { Title } from "../../../../../../../../common/Typography/Title";
 import { handleSliderContentColor } from "../../utils";
 const isSafari = (window as any).safari;
 
-
+console.log("slidercontent", isSafari);
 export const Container = styled.div<{ step: number }>`
   width: 75%;
   height: 360px;

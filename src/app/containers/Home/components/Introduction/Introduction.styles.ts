@@ -6,6 +6,8 @@ import { Span } from "../../../../common/Typography/Span";
 import { Title } from "../../../../common/Typography/Title";
 const isSafari = (window as any).safari;
 
+console.log("introduction", isSafari);
+
 export const Container = styled.section`
   height: 100%;
   display: flex;

@@ -4,6 +4,7 @@ import { Paragraph } from "../../../../../../common/Typography/Paragraph";
 import { Title } from "../../../../../../common/Typography/Title";
 const isSafari = (window as any).safari;
 
+console.log("summary card", isSafari);
 export const Container = styled.div`
   width: 100%;
   max-width: 420px;
