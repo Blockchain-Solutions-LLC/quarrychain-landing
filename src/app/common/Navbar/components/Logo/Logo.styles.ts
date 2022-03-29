@@ -11,10 +11,11 @@ export const LogoContainer = styled.div`
 
 export const LogoImage = styled.img`
   width: 100%;
+  height: 100%;
 
   ${isSafari && `
-    display: block;
-    height: auto !important;
+    width: auto !important;
+    align-self: center;
   `}
 `;
 
