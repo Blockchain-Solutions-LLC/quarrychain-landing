@@ -15,6 +15,7 @@ export const LogoImage = styled.img`
 
   ${isSafari && `
     width: auto;
+    display: block;
   `}
 `;
 
@@ -25,4 +26,8 @@ export const TextLogoImage = styled.img`
   ${media.between("medium", "huge")`
     height: 18px;
   `};
+
+  ${isSafari && `
+    display: block;
+  `}
 `;
