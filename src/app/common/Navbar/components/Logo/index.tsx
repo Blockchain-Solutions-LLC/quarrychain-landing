@@ -11,7 +11,9 @@ export function Logo() {
 
   return (
     <LogoContainer onClick={handleLogoClick}>
-      <LogoImage src={assetPaths.LOGO} />
+      <div>
+        <LogoImage src={assetPaths.LOGO} />
+      </div>
       <TextLogoImage src={assetPaths.QUARRYCHAIN_NAME} />
     </LogoContainer>
   );
