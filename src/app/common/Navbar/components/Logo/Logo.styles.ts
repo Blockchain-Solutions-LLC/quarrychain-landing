@@ -2,6 +2,7 @@ import styled from "styled-components";
 import media from "styled-media-query";
 const isSafari = (window as any).safari;
 
+console.log("logo", isSafari);
 export const LogoContainer = styled.div`
   height: 46px;
   display: flex;
