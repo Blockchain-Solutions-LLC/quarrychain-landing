@@ -15,7 +15,6 @@ export const LogoImage = styled.img`
 
   ${isSafari && `
     width: auto;
-    aspect-ratio: 16/9;
   `}
 `;
 
