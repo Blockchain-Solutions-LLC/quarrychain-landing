@@ -19,6 +19,10 @@ export const LogoImageContainer = styled.div`
 export const LogoImage = styled.img`
   width: 100%;
   height: 100%;
+
+  ${isSafari && `
+    object-fit: cover;
+  `}
 `;
 
 export const TextLogoImage = styled.img`
