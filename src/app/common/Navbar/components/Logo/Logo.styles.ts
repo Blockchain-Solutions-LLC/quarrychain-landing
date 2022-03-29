@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import media from "styled-media-query";
 const isSafari = (window as any).safari;
-console.log("logo styles", isSafari);
 
 export const LogoContainer = styled.div`
   height: 46px;
@@ -15,6 +14,7 @@ export const LogoImage = styled.img`
   height: 100%;
 
   ${isSafari && `
+    display: block;
     width: auto !important;
   `}
 `;
