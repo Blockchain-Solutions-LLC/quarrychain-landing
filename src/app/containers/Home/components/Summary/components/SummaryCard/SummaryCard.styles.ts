@@ -106,6 +106,6 @@ export const Image = styled.img`
 
   ${isSafari && `
     display: block;
-    width: auto !important;
+    width: intrinsic !important;
   `}
 `;
