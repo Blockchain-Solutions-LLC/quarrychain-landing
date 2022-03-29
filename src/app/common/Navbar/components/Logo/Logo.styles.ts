@@ -9,39 +9,15 @@ export const LogoContainer = styled.div`
   cursor: pointer;
 `;
 
-export const LogoImageContainer = styled.div`
-  height: 46px;
-  ${isSafari && `
-    width: 46px !important;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  `}
-`
-
 export const LogoImage = styled.img`
   width: 100%;
   height: 100%;
 
   ${isSafari && `
-    display: block;
-    width: intrinsic;
-    height: intrinsic;
+    width: auto;
+    aspect-ratio: 16/9;
   `}
 `;
-
-export const TextLogoImageContainer = styled.div`
-  height: 46px;
-  ${isSafari && `
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  `}
-
-  ${media.between("medium", "huge")`
-    height: 18px;
-  `};
-`
 
 export const TextLogoImage = styled.img`
   height: 24px;
@@ -50,8 +26,4 @@ export const TextLogoImage = styled.img`
   ${media.between("medium", "huge")`
     height: 18px;
   `};
-
-  ${isSafari && `
-    display: block;
-  `}
 `;
