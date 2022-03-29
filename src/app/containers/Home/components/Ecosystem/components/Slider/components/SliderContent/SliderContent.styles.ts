@@ -3,7 +3,7 @@ import media from "styled-media-query";
 import { Paragraph } from "../../../../../../../../common/Typography/Paragraph";
 import { Title } from "../../../../../../../../common/Typography/Title";
 import { handleSliderContentColor } from "../../utils";
-const isSafari = (window as any).safari;
+const isSafari = (window as any).safari || navigator.userAgent.match(/(iPod|iPhone|iPad)/) || navigator.userAgent.match(/AppleWebKit/);
 
 console.log("slidercontent", isSafari);
 export const Container = styled.div<{ step: number }>`
