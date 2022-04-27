@@ -5,7 +5,7 @@ export enum assetPaths {
   POLYGONS = "assets/polygons.png",
   POLYGONS_BACKGROUND = "assets/polygons_background.png",
   POLYGONS_BACKGROUND_2 = "assets/polygons_background_2.png",
-  QUARRYCHAIN_NAME = "assets/quarrychain_name.png",
+  QUARRYCHAIN_NAME = "assets/quarrychain_name.svg",
   CHART = "assets/chart.png",
   TURQUOISE_BACKGROUND = "assets/turquoise_background.png",
   QUARRY_WALLET = "assets/quarry_wallet.png",
