@@ -33,6 +33,7 @@ export const Content = styled.div`
   ${media.between("medium", "large")`
     width: 80%;
     justify-content: space-between;
+    align-items: center;
   `}
 
   ${media.lessThan("medium")`
@@ -144,6 +145,7 @@ export const StyledButton = styled(Button) <{ withMarginRight?: boolean }>`
 export const ImageContainer = styled.div`
   position: relative;
   width: 610px;
+  height: 400px;
 
   ${media.lessThan("medium")`
     display: none;
@@ -152,7 +154,6 @@ export const ImageContainer = styled.div`
   ${media.lessThan("huge")`
     width: 43%;
   `}
-}
 `;
 
 export const PolygonsImage = styled.img`

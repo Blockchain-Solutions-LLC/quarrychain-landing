@@ -71,10 +71,6 @@ export const QuarrychainTextLogoContainer = styled.div`
   width: 100%;
 `;
 
-export const QuarrychainTextLogo = styled.img`
-  width: 100%;
-`;
-
 export const SocialItemsContainer = styled.div``;
 
 export const InvisibleDiv = styled.div`
