@@ -1,5 +1,6 @@
 import { SocialPlatforms } from "../../../../containers/Home/components/Footer/components/SocialPlatforms";
 import { assetPaths } from "../../../constants";
+import { TextLogo } from '../../../TextLogo';
 import { navbarItems } from "../../constants";
 import {
   Container,
@@ -10,7 +11,6 @@ import {
   MenuWrapper,
   QuarrychainLogo,
   QuarrychainLogoContainer,
-  QuarrychainTextLogo,
   QuarrychainTextLogoContainer,
 } from "./HamburgerMenu.styles";
 import { HamburgerNavbarItem } from "./HamburgerNavbarItem";
@@ -27,7 +27,7 @@ export function HamburgerMenu({ hide }: HamburgerMenuProps) {
               <QuarrychainLogo src={assetPaths.LOGO} />
             </QuarrychainLogoContainer>
             <QuarrychainTextLogoContainer>
-              <QuarrychainTextLogo src={assetPaths.QUARRYCHAIN_NAME} />
+              <TextLogo />
             </QuarrychainTextLogoContainer>
           </LogosContainer>
           {navbarItems.map((navbarItem, index) => (

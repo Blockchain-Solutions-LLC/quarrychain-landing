@@ -29,12 +29,15 @@ const colors = {
     "lightGreen": "rgba(0, 165, 79, 0.5)",
     "darkGreen": "#30B570",
     "lightBlue": "rgba(0, 174, 239, 0.5)",
+    "darkBlue": "#1074BC",
   },
 };
 
 const fonts = {
   standard: "'DIN', sans-serif",
-  bold: "'DIN Bold', sans-serif"
+  bold: "'DIN Bold', sans-serif",
+  futura: "'Futura Condensed Medium', sans-serif",
+  futuraBold: "'Futura Condensed Bold', sans-serif"
 };
 
 export const AppTheme = {

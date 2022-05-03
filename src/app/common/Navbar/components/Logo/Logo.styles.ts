@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import media from "styled-media-query";
+import { TextLogo } from '../../../TextLogo';
 const isSafari = (window as any).safari || navigator.userAgent.match(/(iPod|iPhone|iPad)/) || navigator.userAgent.match(/AppleWebKit/);
 
 export const LogoContainer = styled.div`
@@ -10,8 +10,7 @@ export const LogoContainer = styled.div`
 `;
 
 export const LogoImage = styled.img`
-  width: 100%;
-  height: 100%;
+  height: 46px;
 
   ${isSafari && `
     width: auto;
@@ -19,15 +18,6 @@ export const LogoImage = styled.img`
   `}
 `;
 
-export const TextLogoImage = styled.img`
-  height: 24px;
+export const StyledTextLogo = styled(TextLogo)`
   margin-left: 13px;
-
-  ${media.between("medium", "huge")`
-    height: 18px;
-  `};
-
-  ${isSafari && `
-    display: block;
-  `}
 `;
