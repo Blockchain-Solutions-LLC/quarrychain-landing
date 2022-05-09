@@ -8,7 +8,7 @@ export function Video() {
         width={1000}
         height={700}
         url={
-          "https://www.youtube.com/watch?v=k9HYC0EJU6E&ab_channel=Finematics"
+          "https://www.youtube.com/watch?v=71rlDJuSipI"
         }
       />
     </Container>
