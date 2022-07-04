@@ -6,11 +6,11 @@ export function DateFigure({ color, number, mobile }: DateFigureProps) {
     <Container quarter={!mobile && number}>
       <Hexagon color={color}>
         <HexagonYearContainer>
-          <StyledSpan small>2022</StyledSpan>
+          <StyledSpan small>Phase</StyledSpan>
         </HexagonYearContainer>
         <HexagonQuarter>
           <StyledSpan>
-            Q{number}
+            {number}
           </StyledSpan>
         </HexagonQuarter>
       </Hexagon>
