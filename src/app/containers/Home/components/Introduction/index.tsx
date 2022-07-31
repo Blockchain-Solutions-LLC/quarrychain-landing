@@ -14,6 +14,11 @@ import {
 } from "./Introduction.styles";
 
 export function Introduction() {
+
+  function handleLaunchClick() {
+    window.open('https://dapp.quarrychain.network/', '_blank')
+  }
+
   return (
     <Container>
       <Content>
@@ -30,7 +35,7 @@ export function Introduction() {
             <PolygonsImage src={assetPaths.POLYGONS} />
           </ImageContainerMobile>
           <ButtonsContainer>
-            <StyledButton withMarginRight>Launch App</StyledButton>
+            <StyledButton withMarginRight onClick={handleLaunchClick}>Launch App</StyledButton>
             <StyledButton variant="secondary">Learn More</StyledButton>
           </ButtonsContainer>
         </TitleAndButtonsContainer>

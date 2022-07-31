@@ -5,10 +5,14 @@ import {
 } from "./LaunchAndLanguage.styles";
 
 export function LaunchAndLanguage() {
+  function handleLaunchClick() {
+    window.open('https://dapp.quarrychain.network/', '_blank')
+  }
+
   return (
     <Container>
       <ButtonContainer>
-        <StyledButton>Launch App</StyledButton>
+        <StyledButton onClick={handleLaunchClick}>Launch App</StyledButton>
       </ButtonContainer>
     </Container>
   );
