@@ -13,12 +13,18 @@ export const navbarItems: NavbarItem[] = [
         url: "/",
       },
       {
+        name: "QuarrySwap",
+        url: "/quarry-swap-details",
+      },
+      {
         name: "Token",
         subMenuItems: [
           {
             name: "Quarry Coin",
             url: "/quarry-coin",
-          },
+          }
+          /*
+          ,
           {
             name: "Tuff Token",
             url: "/tuff-token",
@@ -31,6 +37,7 @@ export const navbarItems: NavbarItem[] = [
             name: "Tap Token",
             url: "/tap-token",
           },
+          */
         ],
       },
     ],
