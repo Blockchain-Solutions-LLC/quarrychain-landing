@@ -21,7 +21,7 @@ export const roadmapQuarters = [
   },
   {
     title: "Phase 4",
-    items: ["Giveaway’s", "AMA’s", "Further Development on QuarrySwap’s Real World Marketplace", "QuarryWallet Mobile App Launch", "Expanding QuarryChain’s Ecosystem (DApps)"],
+    items: ["Giveaways", "AMAs", "Further Development on QuarrySwap’s Real World Marketplace", "QuarryWallet Mobile App Launch", "Expanding QuarryChain’s Ecosystem (DApps)"],
     color: AppTheme.colors.secondary[100],
     number: 4
   }
