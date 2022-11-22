@@ -28,7 +28,7 @@ export function Introduction() {
           </StyledTitle>
           <SloganContainer>
             <StyledSpan>
-              An Advanced Decentralized Blockchain Platform
+              Advanced Blockchain Platform
             </StyledSpan>
           </SloganContainer>
           <ImageContainerMobile>
