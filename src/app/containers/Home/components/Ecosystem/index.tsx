@@ -5,7 +5,7 @@ export function Ecosystem() {
   return (
     <Container>
       <Content>
-        <StyledTitle>Quarrychain Ecosystem</StyledTitle>
+        <StyledTitle>QuarryChain Ecosystem</StyledTitle>
         <Slider />
       </Content>
     </Container>

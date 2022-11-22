@@ -24,11 +24,11 @@ export function Introduction() {
       <Content>
         <TitleAndButtonsContainer>
           <StyledTitle>
-            Quarrychain
+            QuarryChain
           </StyledTitle>
           <SloganContainer>
             <StyledSpan>
-              An Advanced Decentralized Blockchain Platform
+              Advanced Blockchain Platform
             </StyledSpan>
           </SloganContainer>
           <ImageContainerMobile>

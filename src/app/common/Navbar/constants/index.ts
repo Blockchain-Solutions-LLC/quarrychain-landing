@@ -13,12 +13,18 @@ export const navbarItems: NavbarItem[] = [
         url: "/",
       },
       {
+        name: "QuarrySwap",
+        url: "/quarry-swap-details",
+      },
+      {
         name: "Token",
         subMenuItems: [
           {
             name: "Quarry Coin",
             url: "/quarry-coin",
-          },
+          }
+          /*
+          ,
           {
             name: "Tuff Token",
             url: "/tuff-token",
@@ -31,6 +37,7 @@ export const navbarItems: NavbarItem[] = [
             name: "Tap Token",
             url: "/tap-token",
           },
+          */
         ],
       },
     ],
@@ -40,7 +47,7 @@ export const navbarItems: NavbarItem[] = [
     menuItems: [
       {
         name: "White Paper V1",
-        url: "https://drive.google.com/file/d/12ib5VDI6K7BflbgQGceW-EdzndEizO0Z/view?usp=sharing",
+        url: "https://drive.google.com/file/d/1ddiSEowC52fZyCygg0ApHkYa9bEE8VvO/view?usp=sharing_eil_se_dm&ts=637d1aa9",
       },
       {
         name: "QRY-20 Contract",

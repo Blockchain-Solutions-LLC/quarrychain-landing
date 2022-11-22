@@ -6,18 +6,18 @@ import { Container, ControllersAndContent } from "./Slider.styles";
 
 export function Slider() {
   const [stepNumber, setStepNumber] = useState<number>(1);
-
   function handleSelectorClick(position: number) {
     setStepNumber(position);
   }
 
   function handleControllerClick(direction: string) {
     if (direction === "right") {
-      stepNumber === 6 ? setStepNumber(1) : setStepNumber(stepNumber + 1);
+      stepNumber === 5 ? setStepNumber(1) : setStepNumber(stepNumber + 1);
     } else {
-      stepNumber === 1 ? setStepNumber(6) : setStepNumber(stepNumber - 1);
+      stepNumber === 1 ? setStepNumber(5) : setStepNumber(stepNumber - 1);
     }
   }
+
 
   return (
     <Container>
