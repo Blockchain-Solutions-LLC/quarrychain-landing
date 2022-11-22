@@ -3,19 +3,19 @@ import { AppTheme } from '../../../../../global/theme';
 export const roadmapQuarters = [
   {
     title: "Phase 1",
-    items: ["Development of Quarrychain Network", "Development of QuarrySwap"],
+    items: ["Development of QuarryChain Network", "Development of QuarrySwap"],
     color: AppTheme.colors.primary[0],
     number: 1
   },
   {
     title: "Phase 2",
-    items: ["Quarrychain.Network Launch", "QuarrySwap Launch", "Quarrychain Pre-ICO", "Further Development of DPoS Network", "Development of QuarryWallet", "QRY-20 Development/Testing", "Expanding the Genesis Team"],
+    items: ["QuarryChain.Network Launch", "QuarrySwap Launch", "QuarryChain Pre-ICO", "Further Development of DPoS Network", "Development of QuarryWallet", "QRY-20 Development/Testing", "Expanding the Genesis Team"],
     color: AppTheme.colors.regular["darkRed"],
     number: 2
   },
   {
     title: "Phase 3",
-    items: ["Quarrychain DPoS Network Launch", "First Quarry Delegate Voting Round", "QuarryWallet Launch", "QRY-20 Launch", "CoinMarketCap/CoinGecko Listings", "QuarrySwap Liquidity Lock", "Moai Token Launch", "Tuff Token Launch", "Tap Token Launch", "Quarrychain Public ICO Launch", "Development of QuarryWallet App"],
+    items: ["QuarryChain DPoS Network Launch", "First Quarry Delegate Voting Round", "QuarryWallet Launch", "QRY-20 Launch", "CoinMarketCap/CoinGecko Listings", "QuarrySwap Liquidity Lock", "Moai Token Launch", "Tuff Token Launch", "Tap Token Launch", "QuarryChain Public ICO Launch", "Development of QuarryWallet App"],
     color: AppTheme.colors.regular["darkGreen"],
     number: 3
   },

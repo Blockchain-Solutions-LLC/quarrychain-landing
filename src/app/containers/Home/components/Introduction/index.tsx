@@ -24,7 +24,7 @@ export function Introduction() {
       <Content>
         <TitleAndButtonsContainer>
           <StyledTitle>
-            Quarrychain
+            QuarryChain
           </StyledTitle>
           <SloganContainer>
             <StyledSpan>

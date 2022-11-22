@@ -11,7 +11,7 @@ export function SocialPlatforms({
 }: SocialPlatformProps) {
   return (
     <Container>
-      {!noTitle && <StyledTitle>Quarrychain Social Platform</StyledTitle>}
+      {!noTitle && <StyledTitle>QuarryChain Social Platform</StyledTitle>}
       <SocialMediaIcons smallSize={smallSize}>
         {socialPlatformItemsToShow(numberOfItems, invertColors, smallSize)}
       </SocialMediaIcons>

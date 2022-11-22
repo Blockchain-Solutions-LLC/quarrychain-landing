@@ -18,7 +18,7 @@ export function TapToken() {
         <MainText>
           <ContentTitle>What is Tap Token?</ContentTitle>
           <ContentParagraph>
-            Quarrychain's TAP token project is a basic-income cryptocurrency
+            QuarryChain's TAP token project is a basic-income cryptocurrency
             designed to create a more equitable distribution of water.
             The TAP token project uses an array of machine-learning algorithms
             to constantly recalculate the gallon value of a TAP token on a
@@ -26,7 +26,7 @@ export function TapToken() {
             corporations and citizens alike.
           </ContentParagraph>
           <ContentParagraph>
-            Quarrychain's TAP token aims to be a cap-and-trade program for water
+            QuarryChain's TAP token aims to be a cap-and-trade program for water
             use (currently) in the United States of America. It is coupled with the
             advanced capabilities of the Quarry Virtual Machine (QVM) to predict
             future value and recommended strategic investments.

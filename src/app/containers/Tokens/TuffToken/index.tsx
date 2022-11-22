@@ -18,10 +18,10 @@ export function TuffToken() {
         <MainText>
           <ContentTitle>What is Tuff Token?</ContentTitle>
           <ContentParagraph>
-            TUFF tokens are a crucial component of the Quarrychain DeFi. This
+            TUFF tokens are a crucial component of the QuarryChain DeFi. This
             token is named after the volcanic rock known as “Tuff,”
             the type of rock that was used to create the Moai Statues. In the
-            Quarrychain Network, its purpose is to take part in decentralized
+            QuarryChain Network, its purpose is to take part in decentralized
             lending, insurance, liquidity, stable coins, etc. TUFF is completely
             initiated, driven, and developed by the TUFF community. All of TUFF's
             functionalities will be implemented by open-source smart contracts,
@@ -35,7 +35,7 @@ export function TuffToken() {
           <ContentParagraph>
             TUFF is a digital asset
             based on QRY20, the technical standard used for tokens within
-            smart contracts on the Quarrychain blockchain. The total token supply is
+            smart contracts on the QuarryChain blockchain. The total token supply is
             1,000,000,000,000,000.
           </ContentParagraph>
           <ContentParagraph>

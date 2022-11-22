@@ -18,7 +18,7 @@ export function QuarryCoin() {
         <MainText>
           <ContentTitle>What is Quarry Coin?</ContentTitle>
           <ContentParagraph>
-            Quarry Coin is the official cryptocurrency for the Quarrychain
+            Quarry Coin is the official cryptocurrency for the QuarryChain
             Protocol. Quarry Coin aims to be a peer-to-peer internet currency
             that enables instant low-cost transactions to anyone in the world.
             Quarry Coin will feature faster transaction-confirmation times and
