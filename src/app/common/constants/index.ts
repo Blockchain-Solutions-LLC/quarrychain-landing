@@ -19,6 +19,8 @@ export enum assetPaths {
   MOAI_TOKEN = "assets/moai_token.png",
   TAP_TOKEN_HEXAGON = "assets/tap_token_hexagon.png",
   TAP_TOKEN = "assets/tap_token.png",
+  SWAP = "assets/swap.png",
+  ASSETS_SYMBOL = "assets/gold.png",
   HIGH_THROUGHTPUT = "assets/high_throughput.png",
   HIGH_AVAILABILITY = "assets/high_availability.png",
   HIGH_SCALABILITY = "assets/high_scalability.png",

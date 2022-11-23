@@ -22,8 +22,12 @@ export const navbarItems: NavbarItem[] = [
           {
             name: "Quarry Coin",
             url: "/quarry-coin",
+          },
+          {
+            name: "Tokenization of Real-World Assets",
+            url: "/real-world-assets",
           }
-          /*
+        /*
           ,
           {
             name: "Tuff Token",

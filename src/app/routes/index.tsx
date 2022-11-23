@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import { FAQ } from "../containers/FAQ";
 import { Home } from "../containers/Home";
 import { QuarryCoin } from "../containers/Tokens/QuarryCoin";
+import { QuarrySwapDetails } from "../containers/General/QuarrySwap";
+import { RealWorldAssets } from "../containers/General/RealWorldAssets";
 
 // todo -- implement Quarry-Swap-Details container
 // todo -- implement container about real world assets
@@ -19,7 +21,8 @@ export function CustomRouter() {
 {/*      <Route path="/tap-token" element={<TapToken />} /> */}
 {/*      <Route path="/moai-token" element={<MoaiToken />} /> */}
       <Route path="/quarry-coin" element={<QuarryCoin />} />
-      <Route path="/quarry-swap-details" element={<QuarryCoin />} />
+      <Route path="/quarry-swap-details" element={<QuarrySwapDetails />} />
+      <Route path="/real-world-assets" element={<RealWorldAssets />} />
     </Routes>
   );
 }
